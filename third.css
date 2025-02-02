@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: sticky;
+    background-color: blanchedalmond;
+}
+
+.menu {
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin: auto 85px;
+    font-size: large;
+}
+
+hr {
+    color: rgb(200, 200, 200);
+}
+
+.containereins {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.containerzwei {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.div {
+    border-radius: 10px;
+    background-color: grey;
+    border:  black solid 2px;
+    width: 180px;
+    height: 250px;
+    display: inline-block;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.div > p {
+    font-size: large;
+    font-weight: bold;
+}
+
+.imageR {
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+    border: black solid 2px;
+} 
+
+.a {
+    color: blue;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    border: black solid 1px;
+    border-radius: 10px;
+    width: 950px;
+    height: 250px;
+    margin: 20px auto;
+    padding: 15px;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.divp {
+    padding: 100px 15px;
+    font-size: large;
+    border-right: black solid 1px;
+    justify-content: center;
+    text-align: center;
+}
+
+.divol {
+    padding: 30px 0;
+    padding-left: 40px;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: blanchedalmond;
+}
+
+@media screen and (max-width: 580px) {
+    header, hr  {
+        visibility: hidden;
+    }
+
+    .box, .footer {
+        visibility: hidden;
+    }
+
+    .containereins, .containerzwei {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .box {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header, .footer {
+        background-color: chocolate;
+    }
+
+    .box  {
+        font-size: small;
+        width: auto;
+        height: auto;
+    }
+    
+    .containereins, .containerzwei, .menu {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header, .footer {
+        background-color: brown;
+    }
+
+    .box {
+        font-size: medium;
+        width: auto;
+        height: auto;
+    }
+
+    .menu, .containereins, .containerzwei  {
+        flex-wrap: wrap;
+    }
+}

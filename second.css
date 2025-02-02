@@ -4,38 +4,6 @@
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 360px) {
-    header, hr  {
-        visibility: hidden;
-    }
-
-    .box, .footer {
-        visibility: hidden;
-    }
-
-    .container {
-        flex-wrap: wrap;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .menu  {
-        flex-wrap: wrap;
-    }
-
-    .box > p,h1 {
-        font-size: 10px;
-    }
-    
-    .footer, hr {
-        visibility: hidden;
-    }
-
-    .container {
-        flex-wrap: wrap;
-    }
-}
-
 header {
     position: sticky;
     background-color: blanchedalmond;
@@ -109,4 +77,57 @@ hr {
     justify-content: center;
     padding: 10px;
     background-color: blanchedalmond;
+}
+
+@media screen and (max-width: 580px) {
+    header, hr  {
+        visibility: hidden;
+    }
+
+    .box, .footer {
+        visibility: hidden;
+    }
+
+    .container {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .box {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header, .footer {
+        background-color: chocolate;
+    }
+
+    .box {
+        font-size: small;
+        width: auto;
+        height: auto;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header, .footer {
+        background-color: brown;
+    }
+
+    .box {
+        font-size: medium;
+        width: auto;
+        height: auto;
+    }
+
+    .menu, .container  {
+        flex-wrap: wrap;
+    }
 }
